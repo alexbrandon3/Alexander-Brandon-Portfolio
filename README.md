@@ -13,5 +13,5 @@ The following image is a look at my first edit of my portfolio for a mobile layo
 
 ## Link to Working Application:
 
-Link here: 
+Link here: https://alexbrandon3.github.io/Alexander-Brandon-Portfolio/
 

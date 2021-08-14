@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+:root {
+  --primary: #ecf5fd;
+  --secondary:hsl(172, 60%, 73%);
+  --dark: black;
+}
+
+body{
+  background-color:var(--primary);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+header h1 {
+  width: 100%;
+  padding: 5px 5px 2px 5px;
+  margin: 0;
+  line-height: 1;
+  background-color:var(--secondary);
+}
+
+header nav{
+  height: 42px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+header nav li{
+  list-style-type: none;
+}
+
+header nav li a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Begins Image Background */
+.portrait img{
+  width:480px;
+  height: 150px;
+  object-fit: cover;
+}
+
+figure{
+  position: relative;
+}
+
+figcaption{
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/wood_floor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+}
+
+figcaption h2 {
+  background-color: var(--secondary);
+  padding: 5px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Begins Work Section */
+.container{
+  display: inline;
+  padding: 18px 25px 0 25px;
+}
+
+.container h2{
+  padding-bottom: 7px;
+  font-size: 18px;
+  margin-bottom: 0;
+  border-bottom: 2px solid var(--dark);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-item{
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 3px;
+  }
+
+.container-item-1{
+  min-height: 90px;
+}
+
+.container-item-1 p{
+  font-size: 13px;
+  line-height: 17px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#work h2{
+  padding-bottom: 7px;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 2px solid var(--dark);
+
+}
+
+.work-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  align-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto 0 30px;
+}
+
+.work-item{
+  min-height: 75px;
+  margin-top: 10px;
+  background-size: cover;
+  width: 100%;
+}
+
+.work-item a{
+  background-color: var(--secondary);
+  text-decoration: none;
+  color: var(--dark);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.work-item a img {
+  background-size: cover;
+  background-color: var(--primary);
+  border: 3px solid var(--secondary);
+  width: 100%;
+  height: auto;
+}
+
+/* Begins Contact Me Section */
+
+#contact-me h2{
+  margin-top:45px;
+  padding-bottom: 7px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--dark);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  align-content: flex-start;
+  flex-direction: row;
+  margin: 10px auto 10px 20px;
+  width: 70%;
+}
+
+.contact-item{
+  min-width: 90%;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-item ul li{
+  margin: 0 10px 10px 10%;
+  font-size: small;
+  text-decoration: underline;
+}
+
+.contact-item ul li a{
+  color: var(--dark);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*Begnins Media Query */
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--dark);
+  }
+
+  header h1 {
+    color: var(--dark);
+    background-color: var(--secondary);
+    padding: 5px 10px 5px 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 15%;
+    text-align: right;
+  }
+  
+  header nav{
+    padding: 15px 0 15px -0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 33%;
+    font-size: 1.2rem
+  }
+
+  figcaption{
+    position: relative;
+  }
+
+  figcaption h2{
+    position: absolute;
+    right: 50px;
+  }
+  
+  section, .container {
+    display: flex;
+  }
+
+  div.container-item{
+    padding:0;
+    margin:0;
+    width: 100;
+  }
+
+  div.container-item p {
+    font-size: 1rem;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .container h2 {
+    border-bottom: none;
+    border-right: 3px solid var(--dark);
+    margin-right: 0;
+    width: 20%;
+    font-size: 1.9rem;
+    padding: 10px 10px 0 0;
+    text-align: right;
+  }
+
+  #work{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+  }
+  
+  #work h2{
+    border-bottom: none;
+    border-right: 3px solid var(--dark);
+    margin: 0;
+    width: 26.5%;
+    font-size: 1.9rem;
+    padding: 10px 10px 0 0;
+    text-align: right;
+    }
+
+  .work-container {
+    margin-top: 2px;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    
+    
+   
+  }
+
+  #item-1{
+    width: 100%;
+    max-width: initial;
+  }
+
+  .work-item {
+    width: 50%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+
+
+
+
+
+  #contact-me h2{
+    border-bottom: none;
+    border-right: 3px solid var(--dark);
+    font-size: 1.9rem;
+    padding: 10px 10px 0 0;
+    margin-top: 5px;
+    margin-right: 0;
+    text-align: right;
+    width: 16.5%;
+  }
+
+  .contact-item ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150%;
+    padding-top: 30px;
+    
+  }
+
+  .contact-item ul li, .contact-item ul li a{
+    font-size: 1.2rem;
+  }
+
+}
+
+
+
+

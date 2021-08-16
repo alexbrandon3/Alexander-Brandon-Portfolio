@@ -134,7 +134,8 @@ figcaption h2 {
   align-items: center;
   align-content: flex-start;
   flex-direction: column;
-  margin: 0 auto 0 30px;
+  margin: 0 auto 0 auto;
+  max-width: 75%;
 }
 
 .work-item{
@@ -142,6 +143,7 @@ figcaption h2 {
   margin-top: 10px;
   background-size: cover;
   width: 100%;
+  position: relative;
 }
 
 .work-item a{
@@ -155,8 +157,14 @@ figcaption h2 {
   background-size: cover;
   background-color: var(--primary);
   border: 3px solid var(--secondary);
+  border-bottom: none;
   width: 100%;
-  height: auto;
+}
+
+.work-link-text {
+  position: absolute;
+      left: 0;
+    top: 40%;
 }
 
 /* Begins Contact Me Section */
@@ -292,12 +300,10 @@ figcaption h2 {
 
   .work-container {
     margin-top: 2px;
-    justify-content:space-evenly;
+    justify-content:space-between;
     display: flex;
     flex-direction: row;
-    
-    
-   
+    width: 65%;
   }
 
   #item-1{
@@ -305,16 +311,18 @@ figcaption h2 {
     max-width: initial;
   }
 
-  .work-item {
-    width: 50%;
-    max-width: 300px;
-    max-height: 300px;
+  #item-1 img{
+  height: 400px;
   }
 
+  .work-item {
+    width: 49%;
+    min-height: 95px;
+  }
 
-
-
-
+  .work-item img {
+    min-height: 95px;
+  }
 
   #contact-me h2{
     border-bottom: none;
@@ -333,7 +341,7 @@ figcaption h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 150%;
+    width: 100%;
     padding-top: 30px;
     
   }
